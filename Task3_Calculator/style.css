@@ -1,0 +1,61 @@
+header h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body{
+    background-color: rgb(66, 65, 65);
+}
+
+.main{
+    background-color: rgb(182, 179, 179);
+    border-radius: 20px;
+    width: 40%;
+    justify-items: center;
+    align-items: center;
+    margin-left: 430px;
+    padding: 30px;
+}
+.row input{
+    width: 500px;
+    height: 70px;
+    margin: 20px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    padding: 10px;
+    text-align: right;
+}
+button{
+    padding: 20px;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-size: 22px;
+    cursor: pointer;
+    /* box-decoration-break: 0 0 30px black solid; */
+}
+
+.buttono{
+    background-color: rgb(59, 65, 179);
+    color: white;
+}
+
+.buttong{
+    background-color: rgb(56, 171, 92);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(169, 168, 168);
+}
+
+.buttono:hover{
+    background-color: rgb(38, 51, 91);
+}
+
+.buttong:hover{
+    background-color: rgb(51, 126, 68);
+}
