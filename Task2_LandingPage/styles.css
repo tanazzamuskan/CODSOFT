@@ -1,0 +1,218 @@
+body {
+    font-family:'DM Serif text',;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(to bottom right, #2a7a05, #8dad4c);
+    background-image: 
+        url('bg.png'),
+        linear-gradient(to bottom right, #2a7a05, #8dad4c);
+    background-blend-mode: overlay;
+    color: white;
+    height: 97vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 50px;
+}
+
+header h1 {
+    font-family: 'Eagle Lake', serif;
+    font-size: 40px;
+    color: #f5f0e1;
+}
+
+nav img {
+    margin-left: 20px;
+    width: 35px;
+    padding: 3px;
+    background-color: #094801;
+    border-color: #0c6401;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav img:hover {
+    background-color: #094801;
+    border-color: #0c6401;
+    border-radius: 4px;
+    padding: 3px;
+    box-shadow: 0 0 12px #f4f00d;
+    animation: 1.5s ease-in-out;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    gap: 100px;
+}
+
+.text-block {
+    background: linear-gradient(to bottom,rgb(28, 75, 1),rgb(58, 122, 2),rgb(27, 72, 2));
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 900px;
+    max-height: 600px;
+    color: #ffffff;
+    font-size: 23px;
+    line-height: 1.6;
+    z-index: 1;
+    box-shadow: 0 0 20px #00360d;
+}
+
+.text-block h2{
+    font-family: 'Eagle Lake', serif;
+}
+
+.text-block p {
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 2px;
+    border: none;
+    background: linear-gradient(to right, transparent, #fff, transparent);
+    margin: 3px auto;
+    width: 80%;
+}
+
+.form-container {
+    margin-top: 70px;
+    perspective: 900px;
+}
+
+.form {
+    font-family: 'Eagle Lake', serif;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.form:hover {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('bookcover.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 0 20px rgba(217, 254, 132, 0.804);
+}
+
+.form-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url('pagecover.jpeg'),
+        linear-gradient(to bottom, #635530cd, #917f2fab, #635530cd);
+    background-blend-mode: overlay;
+    border-radius: 8px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(44, 62, 0, 0.804);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+form h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #472d01;
+}
+
+form input, form button {
+    font-family: 'Eagle Lake', serif;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input {
+    background-color: #f9f8ed;
+}
+
+form button {
+    background-color: #462c02;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #2b5207;
+}
+
+.confirmation {
+    font-size: 1rem;
+    color: #014411;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Optional simulation for visual feedback */
+form:valid .confirmation {
+    display: block;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.step img {
+    width: 200px;
+    height: 150px;
+    object-fit:cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.step p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.divider-vert {
+    width: 2px;
+    background: linear-gradient(to top, transparent, #9ab87f,transparent);
+    height: auto;
+}
