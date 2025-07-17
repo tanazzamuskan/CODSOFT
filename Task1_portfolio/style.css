@@ -77,6 +77,11 @@ header{
     margin-left: 13px;
 }
 
+#profile_img{
+    border-radius: 100px;
+    box-shadow: 0 0 30px #b5c5f8b0;
+}
+
 .btn-area a{
     display: inline-flex;
     font-size: 23px;
@@ -86,12 +91,12 @@ header{
     border: solid rgb(140, 247, 255) 3px;
     padding: 10px;
     border-radius: 10px;
+    transition: .5s;
 }
 
 .btn-area a:hover{
     background-color: rgb(140, 247, 255);
     color: rgb(0, 32, 40);
-    transition: .3s;
 }
 
 .index-logo img{
