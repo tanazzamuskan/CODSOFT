@@ -277,10 +277,9 @@ footer{
     bottom: 0px;
     left: 0px;
     right: 0px;
-    border-top: solid aquamarine 1px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: rgba(3, 183, 183, 0.685);
+    border-top: solid rgb(127, 189, 255) 1px;
+    margin: 0px;
+    background-color: rgba(26, 5, 144, 0.685);
     text-align: center; 
     padding: 1rem 0; 
     font-size: 1.3rem; 
